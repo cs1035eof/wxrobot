@@ -82,7 +82,7 @@ def get_next_tick_time(srcTime):
         else:
             i += 1
 
-    return nextTime + timedelta(hours=1)
+    return nextTime + dt.timedelta(seconds=timeListStart)
 
 def is_work_time(srcTime):
     ret = False
